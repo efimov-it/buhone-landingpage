@@ -1,0 +1,25 @@
+.clients {
+    padding-top: 100px;
+    padding-bottom: 210px;
+
+    h2 {
+        margin-bottom: 80px;
+    }
+
+    &_slider {
+        padding-bottom: 100px;
+        margin-bottom: -100px;
+        
+        .slick {
+            &-dots {
+                bottom: 0px;
+                padding: 0px;
+            }
+        }
+
+        > button {
+            bottom: 0px;
+            right: 0px;
+        }
+    }
+}

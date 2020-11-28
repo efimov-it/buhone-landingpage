@@ -4,6 +4,7 @@ $accent : #005FA3;
 $padding-left-right : calc(50vw - 558px);
 
 @import "./components/slider-template/index.scss";
+@import "./components/grey-section/index.scss";
 
 @import "./components/header/index.scss";
 @import "./components/logo/index.scss";
@@ -11,6 +12,8 @@ $padding-left-right : calc(50vw - 558px);
 @import "./components/navigation/index.scss";
 
 @import "./components/main-banner/index.scss";
+
+@import "./components/our-service/index.scss";
 
 @font-face {
     font-family: "LatoRegular";
@@ -64,6 +67,6 @@ h2.head-text {
 h3.head-text {
     font-size: 24px;
     font-family: LatoBlack;
-    color: #dbdbdb;
+    color: #BDBDBD;
     line-height: 33px;
 }

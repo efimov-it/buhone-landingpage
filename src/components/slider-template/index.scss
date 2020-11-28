@@ -30,6 +30,7 @@
             }
 
             li {
+                height: 10px;
 
                 &:not(:last-child) > button {
                     margin-right: 40px;
@@ -54,16 +55,37 @@
         bottom: 113px;
         transition: background .3s ease-in-out;
         border: none;
-        right: $padding-left-right !important;
+        right: $padding-left-right;
         z-index: 1;
         outline: none;
 
         &__left {
-            right: calc(#{$padding-left-right} + 60px) !important;
+            margin-right: 60px;
         }
 
         &:hover {
             background: rgba(#ffffff, .4);
+        }
+    }
+
+
+    &__colored {
+        .slick {
+            &-dots {
+                button {
+                    background: $accent;
+                }
+            }
+        }
+
+        .slider-template {
+            &_button {
+                background: rgba($accent, .4);
+
+                &:hover {
+                    background: $accent;
+                }
+            }
         }
     }
 }

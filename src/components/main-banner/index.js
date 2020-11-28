@@ -33,6 +33,10 @@ export default function MainBanner () {
         <section>
             <SliderTemplate
                 className="main-banner"
+                settings={{
+                    speed: 1000,
+                    fade: true
+                }}
             >
                 {
                     banners.map(({image, text, buttonText, link}, key) =>

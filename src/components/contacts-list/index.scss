@@ -1,0 +1,23 @@
+.contacts-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &_item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    &_icon {
+        margin-right: 15px;
+    }
+
+    &_link, &_text {
+        font-family: "LatoRegular";
+        font-size: 13px;
+    }
+}

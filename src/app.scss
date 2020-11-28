@@ -1,3 +1,11 @@
+$text : #000000;
+$accent : #005FA3;
+
+@import "./components/header/index.scss";
+@import "./components/logo/index.scss";
+@import "./components/contacts-list/index.scss";
+@import "./components/navigation/index.scss";
+
 @font-face {
     font-family: "LatoRegular";
     src: url(./assets/fonts/Lato/Lato-Regular.ttf);
@@ -6,6 +14,15 @@
     font-family: "LatoLight";
     src: url(./assets/fonts/Lato/Lato-Light.ttf);
 }
+@font-face {
+    font-family: "LatoBold";
+    src: url(./assets/fonts/Lato/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: "MerriweatherRegular";
+    src: url(./assets/fonts/Merriweather/Merriweather-Regular.ttf);
+}
 
 *{
     box-sizing: border-box;
@@ -13,5 +30,7 @@
     padding: 0px;
     list-style: none;
     font-size: 18px;
-    font-family: LatoLight;
+    font-family: "LatoLight";
+    text-decoration: none;
+    color: #000000;
 }

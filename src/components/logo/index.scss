@@ -1,0 +1,14 @@
+.logo {
+    display: flex;
+    align-items: center;
+
+    &_image {
+        margin-right: 30px;
+    }
+
+    &_text {
+        font-family: MerriweatherRegular;
+        font-size: 36px;
+        color: $accent;
+    }
+}

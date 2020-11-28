@@ -1,0 +1,27 @@
+.navigation {
+    &_list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &-item {
+
+
+            &:not(:last-child) {
+                margin-right: 68px;
+            }
+        }
+
+        &-link {
+            font-family: LatoBold;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            transition: color .3s ease-in-out;
+
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+}

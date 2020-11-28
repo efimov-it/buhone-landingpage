@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    height: 110px;
+    background: #ffffff;
+    padding: 22px calc(50% - 558px) 31px;
+
+    &_content {
+        width: 100%;
+    }
+
+    &_contacts {
+        margin-bottom: 22px;
+    }
+}

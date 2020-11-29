@@ -1,0 +1,62 @@
+.reviews {
+    background: #ffffff;
+    padding-bottom: 250px;
+
+    &_slider {
+        padding-bottom: 110px;
+        margin-bottom: -110px;
+
+        .slick {
+            &-track {
+                align-items: center;
+            }
+    
+            &-dots {
+                bottom: 0px;
+                padding: 0px;
+            }
+        }
+
+        & > button {
+            bottom: 0px;
+            right: 0px;
+        }
+    }
+
+    &_item {
+        padding: 45px 95px;
+        background: #ebebeb;
+    }
+
+    &_text {
+        margin-bottom: 58px;
+    }
+
+    &_author {
+        display: flex;
+        align-items: center;
+
+        &-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            object-fit: cover;
+            margin-right: 35px;
+        }
+
+        &-info {
+
+        }
+
+        &-name {
+            font-family: LatoBlack;
+            margin-bottom: 5px;
+        }
+
+        &-post {
+            color: #4f4f4f;
+            font-family: LatoRegular;
+            font-size: 14px;
+        }
+    }
+}

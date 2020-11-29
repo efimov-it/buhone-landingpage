@@ -1,5 +1,5 @@
 import SliderTemplate from "../slider-template"
-import GreySection from "../grey-section"
+import Section from "../section"
 
 export default function Clients () {
     const clients = [
@@ -35,7 +35,7 @@ export default function Clients () {
         }
     ]
     return (
-        <GreySection
+        <Section
             smallHeader="Наши клиенты"
             bigHeader="С нами работают"
             className="clients"
@@ -66,6 +66,6 @@ export default function Clients () {
                     )
                 }
             </SliderTemplate>
-        </GreySection>
+        </Section>
     )
 }

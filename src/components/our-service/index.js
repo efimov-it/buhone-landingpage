@@ -1,4 +1,4 @@
-import GreySection from "../grey-section"
+import Section from "../section"
 
 export default function OurService () {
     const service = [
@@ -29,7 +29,7 @@ export default function OurService () {
     ]
 
     return (
-        <GreySection
+        <Section
             className="our-service"
             smallHeader="Наши услуги"
             bigHeader="Мы специализируемся"
@@ -51,6 +51,6 @@ export default function OurService () {
                     )
                 }
             </div>
-        </GreySection>
+        </Section>
     )
 }

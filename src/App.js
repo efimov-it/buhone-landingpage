@@ -4,6 +4,7 @@ import MainBanner from "./components/main-banner"
 import OurService from "./components/our-service"
 
 import Clients from "./components/clients"
+import Reviews from "./components/reviews"
 function App() {
   return <>
     <Header />
@@ -12,6 +13,7 @@ function App() {
       <OurService />
 
       <Clients />
+      <Reviews />
     </main>
   </>
 }

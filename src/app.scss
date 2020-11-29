@@ -4,7 +4,7 @@ $accent : #005FA3;
 $padding-left-right : calc(50vw - 558px);
 
 @import "./components/slider-template/index.scss";
-@import "./components/grey-section/index.scss";
+@import "./components/section/index.scss";
 
 @import "./components/header/index.scss";
 @import "./components/logo/index.scss";
@@ -16,6 +16,8 @@ $padding-left-right : calc(50vw - 558px);
 @import "./components/our-service/index.scss";
 
 @import "./components/clients/index.scss";
+
+@import "./components/reviews/index.scss";
 
 @font-face {
     font-family: "LatoRegular";

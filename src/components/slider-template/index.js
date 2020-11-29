@@ -9,6 +9,7 @@ export default function SliderTemplate ({className, children, settings, colored 
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
+        // adaptiveHeight: true,
         prevArrow: <SliderArrows direction="left" />,
         nextArrow: <SliderArrows direction="right" />,
         ...settings

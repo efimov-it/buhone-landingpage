@@ -1,0 +1,123 @@
+.contacts {
+    display: flex;
+    background-image: url(../../assets/img/contacts.jpg);
+    background-size: cover;
+    padding: 122px $padding-left-right 140px $padding-left-right;
+
+    p,a,span {
+        color: #ffffff;
+    }
+
+    &_left-block, &_right-block {
+        width: 50%;
+    }
+
+    &_head {
+        color: #ffffff !important;
+        margin-bottom: 60px;
+    }
+
+    &_text {
+        margin-bottom: 80px;
+    }
+
+    &_info {
+        display: flex;
+        align-items: center;
+
+        &-block {
+            display: flex;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-right: 40px;
+            }
+        }
+
+        &-icon {
+            margin-right: 16px;
+        }
+
+        &-link {
+            font-size: 21px;
+        }
+    }
+
+    &_form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &_field {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-bottom: 35px;
+
+        &-placeholder {
+
+        }
+
+        &-input {
+            background: none;
+            border: none;
+            border-bottom: 1px solid #ffffff;
+            padding: 15px 0px;
+            font-size: 21px;
+            color: #ffffff;
+
+            &::placeholder {
+                color: #bdbdbd;
+            }
+        }
+
+        &-error {
+            position: absolute;
+            height: 40px;
+            letter-spacing: .3px;
+            font-family: LatoRegular;
+            font-size: 14px;
+            bottom: -42px;
+            transform: translateY(15px);
+            opacity: 0;
+
+            transition: .3s ease-in-out;
+
+            &__shown {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+
+        input {
+            width: 255px;
+        }
+
+        textarea {
+            width: 540px;
+            height: 105px;
+            resize: none;
+        }
+    }
+
+    &_submit {
+        border: none;
+        width: 270px;
+        height: 60px;
+        background: $accent;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-left: auto;
+
+        transition: background .3s ease-in-out;
+
+        &:disabled {
+            background: #333333;
+            cursor: not-allowed;
+        }
+    }
+}

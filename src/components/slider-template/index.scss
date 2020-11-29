@@ -19,7 +19,7 @@
             button {
                 text-indent: -9999px;
                 cursor: pointer;
-                outline: none;
+                
                 width: 10px;
                 height: 10px;
                 overflow: hidden;
@@ -57,7 +57,7 @@
         border: none;
         right: $padding-left-right;
         z-index: 1;
-        outline: none;
+        
 
         &__left {
             margin-right: 60px;

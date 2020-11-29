@@ -1,65 +1,72 @@
 import {Formik} from "formik"
 import Icons from "../../assets/img/icons.svg"
 
-const validate = values => {
-    const errors = {}
-    const requiredText = "Пожалуйста, заполните поле."
-    if (!values.name) {
-        errors.name = requiredText
-    } else if (!values.surname) {
-        errors.surname = requiredText
-    } else if (!values.message) {
-        errors.message = requiredText
-    } else if (
-        !/^[А-Я|а-я|Ёё|A-Z|a-z]{1,20}$/i.test(values.name)
-    ) {
-        errors.name = 'Имя должно состоять только из букв и не должно превышать 20 символов.';
-    } else if (
-        !/^[А-Я|а-я|Ёё|A-Z|a-z]{1,20}$/i.test(values.surname)
-    ) {
-        errors.surname = 'Фамилия должна состоять только из букв и не должна превышать 20 символов.';
-    } else if (
-        !/^[А-Я|а-я|Ёё|A-Z|a-z|0-9|\s|\,|\.|\?|\!]{1,100}$/i.test(values.message)
-    ) {
-        errors.message = 'Длина сообщения не должна превышать 100 символов и содержать спец. символы.';
-    }
-    return errors;
-}
-
-const sendMessage = (values, { setSubmitting }) => {
-    //Спёр из доков и решил оставить как симуляцию отправки запроса
-    setTimeout(() => {
-      console.log(JSON.stringify(values, null, 2))
-      alert("Ваше сообщение отправлено!")
-      setSubmitting(false)
-    }, 1000)
-}
-
-const initialValues = {
-    name: "",
-    surname: "",
-    message: ""
-}
-
-const fields = {
-    name : {
-        text: "Имя",
-        title: "Введите Ваше имя.",
-        placeholder: "Иван"
-    },
-    surname: {
-        text: "Фамилия",
-        title: "Введите Вашу фамилию.",
-        placeholder: "Иванов"
-    },
-    message: {
-        text: "Сообщение",
-        title: "Введите текст сообщения.",
-        placeholder: "Ваше сообщение"
-    }
-}
-
 export default function Contacts ({id}) {
+
+    const validate = values => {
+        const errors = {}
+        const requiredText = "Пожалуйста, заполните поле."
+        if (!values.name) {
+            errors.name = requiredText
+        }
+        else if (
+            !/^[А-Я|а-я|Ёё|A-Z|a-z]{1,20}$/.test(values.name)
+        ) {
+            errors.name = 'Имя должно состоять только из букв. Длина не больше 20 символов.';
+        }
+        
+        if (!values.surname) {
+            errors.surname = requiredText
+        } else if (
+            !/^[А-Я|а-я|Ёё|A-Z|a-z]{1,20}$/.test(values.surname)
+        ) {
+            errors.surname = 'Фамилия должна состоять только из букв. Длина не больше 20 символов.';
+        }
+        
+        if (!values.message) {
+            errors.message = requiredText
+        } else if (
+            !/^[А-Я|а-я|Ёё|A-Z|a-z|0-9|\s|\,|\.|\?|\!]{1,100}$/.test(values.message)
+        ) {
+            errors.message = 'Длина сообщения не должна превышать 100 символов и содержать спец. символы.';
+        }
+        
+        return errors;
+    }
+    
+    const sendMessage = (values, { setSubmitting }) => {
+        //Спёр из доков и решил оставить как симуляцию отправки запроса (про таймер)
+        setTimeout(() => {
+          console.log(JSON.stringify(values, null, 2))
+          alert("Ваше сообщение отправлено!")
+          setSubmitting(false)
+        }, 1000)
+    }
+    
+    const initialValues = {
+        name: "",
+        surname: "",
+        message: ""
+    }
+    
+    const fields = {
+        name : {
+            text: "Имя",
+            title: "Введите Ваше имя.",
+            placeholder: "Иван"
+        },
+        surname: {
+            text: "Фамилия",
+            title: "Введите Вашу фамилию.",
+            placeholder: "Иванов"
+        },
+        message: {
+            text: "Сообщение",
+            title: "Введите текст сообщения.",
+            placeholder: "Ваше сообщение"
+        }
+    }
+
     return (
         <section className="contacts" id={id}>
             <div className="contacts_left-block">

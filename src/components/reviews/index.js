@@ -46,7 +46,7 @@ export default function Reviews ({id}) {
             >
                 {
                     reviews.map(({name, post, image, text}, key) =>
-                        <div className="reviews_item">
+                        <div className="reviews_item" key={key}>
                             <div className="reviews_text">{text}</div>
                             <div className="reviews_author">
                                 <img

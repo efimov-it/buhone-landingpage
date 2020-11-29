@@ -61,7 +61,7 @@ export default function Clients ({id}) {
                             <img
                                 className="clients_logo" 
                                 src={image}
-                                rel={name}
+                                alt={name}
                             />
                         </a>
                     )

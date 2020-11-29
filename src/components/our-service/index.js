@@ -46,6 +46,7 @@ export default function OurService ({id}) {
                             <img
                                 src={image}
                                 className="our-service_catalog-image"
+                                alt={name}
                             />
                             <div className="our-service_catalog-fade" />
                             <h2 className="our-service_catalog-text">{name}</h2>

@@ -44,7 +44,7 @@ export default function MainBanner () {
                             <img
                                 src={image}
                                 className="main-banner_slide-image"
-                                rel={text}
+                                alt={text}
                             />
 
                             <div className="main-banner_slide-content">
@@ -52,7 +52,6 @@ export default function MainBanner () {
                                 <a
                                     className="main-banner_slide-button"
                                     href={link}
-                                    type="button"
                                     title="Перейти"
                                 >{buttonText}</a>
                             </div>

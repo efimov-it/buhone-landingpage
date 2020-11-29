@@ -1,0 +1,39 @@
+@import "./varibles.scss";
+@import "./fonts.scss";
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 18px;
+    font-family: "LatoLight";
+    text-decoration: none;
+    color: #000000;
+    outline: none;
+}
+
+h2.head-text {
+    color: #333333;
+
+    &, & * {
+        font-size: 48px;
+        font-family: MerriweatherBlack;
+        line-height: 69px;
+    }
+}
+h3.head-text {
+    color: #BDBDBD;
+
+    &, & * {
+        font-size: 24px;
+        font-family: LatoBlack;
+        line-height: 33px;
+    }
+}
+
+.accent-text {
+    color: $accent;
+}
+
+@import "./import.scss";

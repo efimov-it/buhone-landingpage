@@ -53,6 +53,7 @@ export default function MainBanner () {
                                     className="main-banner_slide-button"
                                     href={link}
                                     type="button"
+                                    title="Перейти"
                                 >{buttonText}</a>
                             </div>
                         </div>    

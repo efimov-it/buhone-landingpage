@@ -19,10 +19,6 @@
             letter-spacing: 0.1em;
             transition: color .3s ease-in-out;
             cursor: pointer;
-
-            &:hover {
-                color: $accent;
-            }
         }
     }
 }

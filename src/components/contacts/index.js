@@ -78,6 +78,7 @@ export default function Contacts ({id}) {
                         <a
                             className="contacts_info-link"
                             href="tel:+71112223344"
+                            title="Позвонить."
                         >+7 (111) 222-33-44</a>
                     </div>
                     <div className="contacts_info-block">
@@ -92,6 +93,7 @@ export default function Contacts ({id}) {
                         <a
                             className="contacts_info-link"
                             href="mailto:order@bu-one.ru"
+                            title="Написать письмо."
                         >order@bu-one.ru</a>
                     </div>
                 </div>
@@ -156,7 +158,7 @@ export default function Contacts ({id}) {
                                 className="contacts_submit"
                                 type="submit"
                                 disabled={isSubmitting}
-                                title="Отправить сообщение"
+                                title="Отправить сообщение."
                             >
                                 Отправить сообщение
                             </button>

@@ -41,6 +41,7 @@ export default function OurService ({id}) {
                         <article
                             className="our-service_catalog-item"
                             key={key}
+                            title={name+"."}
                         >
                             <img
                                 src={image}

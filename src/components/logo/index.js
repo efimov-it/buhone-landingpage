@@ -5,7 +5,7 @@ export default function Logo ({className}) {
         <a
             className={"logo " + (className ? className : "")}
             href="/"
-            title="На главную"
+            title="На главную."
         >
             <img
                 src={LogoImage}

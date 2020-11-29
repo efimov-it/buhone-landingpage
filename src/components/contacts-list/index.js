@@ -7,35 +7,36 @@ export default function ContactList ({className}) {
             type: "phone",
             value: "8 (111) 222-33-44",
             link: "tel:81112223344",
-            title: "Позвонить"
+            title: "Позвонить."
         },
         {
             type: "clock",
             value: "Пн-Пт 10:00-18:00",
             link: null,
-            title: "Рабочие часы"
+            title: "Рабочие часы."
         },
         {
             type: "mail",
             value: "order@buhone.ru",
             link: "mailto:order@buhone.ru",
-            title: "Написать письмо"
+            title: "Написать письмо."
         },
         {
             type: "location",
             value: "Невский пр. 130",
             link: "https://yandex.ru/maps/-/CCUEMJUN-A",
-            title: "Открыть на карте"
+            title: "Открыть на карте."
         }
     ]
 
     return (
         <ul className={"contacts-list " + (className ? className : "")}>
             {
-                contacts.map( ({type, value, link, title}) => 
+                contacts.map( ({type, value, link, title}, key) => 
                     <li
                         className="contacts-list_item"
                         title={title}
+                        key={key}
                     >
                         <svg
                             viewBox="0 0 24 24"

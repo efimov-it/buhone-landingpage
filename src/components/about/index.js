@@ -33,7 +33,11 @@ export default function About ({id}) {
             <div className="about_right-block about_cases">
                 {
                     cases.map(({text, count, link}, key) =>
-                        <div className="case">
+                        <div
+                            className="case"
+                            title={text + " (" + count + ")."}
+                            key={key}
+                        >
                             <p className="case_count">{count}</p>
                             <p className="case_text">{text}</p>
                             <a

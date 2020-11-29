@@ -6,27 +6,27 @@ export default function Navigation ({className}) {
         {
             value: "Главная",
             link: "home",
-            title: "Вернуться к началу"
+            title: "Вернуться к началу."
         },
         {
             value: "Услуги",
             link: "service",
-            title: "Перейти к услугам"
+            title: "Перейти к услугам."
         },
         {
             value: "Кейсы",
             link: "service",
-            title: "Перейти к кейсам"
+            title: "Перейти к кейсам."
         },
         {
             value: "О компании",
             link: "about",
-            title: "Перейти к разделу о компании"
+            title: "Перейти к разделу о компании."
         },
         {
             value: "Контакты",
             link: "contacts",
-            title: "Перейти к контактам"
+            title: "Перейти к контактам."
         }
     ]
 
@@ -34,16 +34,16 @@ export default function Navigation ({className}) {
         <nav className={"navigation " + (className ? className : "")}>
             <ul className="navigation_list">
                 {
-                    menuItems.map(({value, link, title})=>
+                    menuItems.map(({value, link, title}, key)=>
                         <li
                             className="navigation_list-item"
                             title={title}
+                            key={key}
                         >
                             <Link
                                 className="navigation_list-link"
                                 to={link}
                                 smooth={true}
-                                // offset={-70}
                                 duration= {500}
                             >{value}</Link>
                         </li>

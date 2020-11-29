@@ -5,6 +5,8 @@ import OurService from "./components/our-service"
 
 import Clients from "./components/clients"
 import Reviews from "./components/reviews"
+
+import Footer from "./components/footer"
 function App() {
   return <>
     <Header />
@@ -14,6 +16,8 @@ function App() {
 
       <Clients />
       <Reviews />
+
+      <Footer />
     </main>
   </>
 }

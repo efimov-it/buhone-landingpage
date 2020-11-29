@@ -19,6 +19,8 @@ $padding-left-right : calc(50vw - 558px);
 
 @import "./components/reviews/index.scss";
 
+@import "./components/footer/index.scss";
+
 @font-face {
     font-family: "LatoRegular";
     src: url(./assets/fonts/Lato/Lato-Regular.ttf);

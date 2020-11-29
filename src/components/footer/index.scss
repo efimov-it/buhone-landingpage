@@ -1,0 +1,10 @@
+.footer {
+    padding: 50px $padding-left-right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_text {
+        font-size: 14px;
+    }
+}

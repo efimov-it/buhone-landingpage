@@ -9,14 +9,14 @@ import Contacts from "./components/contacts"
 import Footer from "./components/footer"
 function App() {
   return <>
-    <Header />
+    <Header id="home" />
     <main>
       <MainBanner />
-      <OurService />
-      <About />
-      <Clients />
-      <Reviews />
-      <Contacts />
+      <OurService id="service" />
+      <About id="about" />
+      <Clients id="clients" />
+      <Reviews id="reviews" />
+      <Contacts id="contacts" />
     </main>
     <Footer />
   </>

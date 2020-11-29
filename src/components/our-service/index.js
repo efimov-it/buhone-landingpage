@@ -1,6 +1,6 @@
 import Section from "../section"
 
-export default function OurService () {
+export default function OurService ({id}) {
     const service = [
         {
             name: "Бухгалтерское обслуживание",
@@ -33,6 +33,7 @@ export default function OurService () {
             className="our-service"
             smallHeader="Наши услуги"
             bigHeader="Мы специализируемся"
+            id={id}
         >
             <div className="our-service_catalog">
                 {

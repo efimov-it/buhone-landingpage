@@ -59,9 +59,9 @@ const fields = {
     }
 }
 
-export default function Contacts () {
+export default function Contacts ({id}) {
     return (
-        <section className="contacts">
+        <section className="contacts" id={id}>
             <div className="contacts_left-block">
                 <h2 className="head-text contacts_head">Связь с нами</h2>
                 <p className="contacts_text">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</p>

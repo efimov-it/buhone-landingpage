@@ -1,4 +1,4 @@
-export default function About () {
+export default function About ({id}) {
 
     const cases = [
         {
@@ -24,7 +24,7 @@ export default function About () {
     ]
 
     return (
-        <section className="about">
+        <section className="about" id={id}>
             <div className="about_left-block">
                 <h3 className="head-text about_small-header">О нас</h3>
                 <h2 className="head-text about_big-header">Компания<br /><span className="accent-text">ИвановПром</span></h2>

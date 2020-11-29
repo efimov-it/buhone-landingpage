@@ -1,7 +1,7 @@
 import Section from "../section"
 import Slider from "../slider-template"
 
-export default function Reviews () {
+export default function Reviews ({id}) {
 
     const reviews = [
         {
@@ -35,6 +35,7 @@ export default function Reviews () {
             className="reviews"
             smallHeader="Отзывы"
             bigHeader="Ваши благодарности"
+            id={id}
         >
             <Slider
                 className="reviews_slider"

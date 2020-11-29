@@ -1,7 +1,7 @@
 import SliderTemplate from "../slider-template"
 import Section from "../section"
 
-export default function Clients () {
+export default function Clients ({id}) {
     const clients = [
         {
             name: "Microsoft",
@@ -39,6 +39,7 @@ export default function Clients () {
             smallHeader="Наши клиенты"
             bigHeader="С нами работают"
             className="clients"
+            id={id}
         >
             <SliderTemplate
                 className="clients_slider"

@@ -1,29 +1,31 @@
+import { Link } from "react-scroll";
+
 export default function Navigation ({className}) {
 
     const menuItems = [
         {
             value: "Главная",
-            link: "#",
+            link: "home",
             title: "Вернуться к началу"
         },
         {
             value: "Услуги",
-            link: "#",
+            link: "service",
             title: "Перейти к услугам"
         },
         {
             value: "Кейсы",
-            link: "#",
+            link: "service",
             title: "Перейти к кейсам"
         },
         {
             value: "О компании",
-            link: "#",
+            link: "about",
             title: "Перейти к разделу о компании"
         },
         {
             value: "Контакты",
-            link: "#",
+            link: "contacts",
             title: "Перейти к контактам"
         }
     ]
@@ -37,10 +39,13 @@ export default function Navigation ({className}) {
                             className="navigation_list-item"
                             title={title}
                         >
-                            <a
+                            <Link
                                 className="navigation_list-link"
-                                href={link}
-                            >{value}</a>
+                                to={link}
+                                smooth={true}
+                                // offset={-70}
+                                duration= {500}
+                            >{value}</Link>
                         </li>
                     )
                 }

@@ -15,6 +15,8 @@ $padding-left-right : calc(50vw - 558px);
 
 @import "./components/our-service/index.scss";
 
+@import "./components/about/index.scss";
+
 @import "./components/clients/index.scss";
 
 @import "./components/reviews/index.scss";
@@ -65,14 +67,24 @@ $padding-left-right : calc(50vw - 558px);
 }
 
 h2.head-text {
-    font-size: 48px;
-    font-family: MerriweatherBlack;
     color: #333333;
-    line-height: 69px;
+
+    &, & * {
+        font-size: 48px;
+        font-family: MerriweatherBlack;
+        line-height: 69px;
+    }
 }
 h3.head-text {
-    font-size: 24px;
-    font-family: LatoBlack;
     color: #BDBDBD;
-    line-height: 33px;
+
+    &, & * {
+        font-size: 24px;
+        font-family: LatoBlack;
+        line-height: 33px;
+    }
+}
+
+.accent-text {
+    color: $accent;
 }
